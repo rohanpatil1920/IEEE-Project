@@ -1,0 +1,40 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(/Images/Index_Background.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.index img {
+    padding: 50px;
+    float: right;
+    transform: translateY(-70px);
+    width: 15%;
+}
+
+.greet {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    transform: translateY(300px);
+    font-size: 50px;
+    color: #000;
+}
+
+.index button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90px, 30px);
+    background-color: #6ab04c;
+    color: #fff;
+    border: none;
+    height: 70px;
+    width: 200px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
