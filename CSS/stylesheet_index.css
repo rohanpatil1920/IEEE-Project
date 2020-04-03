@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url(Images/Index_Background.jpg);
+    background-image: url(/Images/Index_Background.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
