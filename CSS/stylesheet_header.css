@@ -8,11 +8,17 @@
     background-color: #6ab04c;
 }
 
-.site-name #logo a {
+.site-name {
     color: #fff;
     text-decoration: none;
-    margin: 20px 20px;
-    transform: translateY(-25px);
+    margin-top: 25px;
+    margin-left: 30px;
+    transform: translateY(25px);
+}
+
+.site-name #logo a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .form-control {
