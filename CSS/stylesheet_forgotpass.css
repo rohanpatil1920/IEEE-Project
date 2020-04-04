@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../Images/Index_Background.jpg);
+}
+
+.content h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.phone-number button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-200px, 0px);
+    background-color: #6ab04c;
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 4px;
+    color: #fff;
+    opacity: 1;
+    font-size: 25px;
+    font-weight: bolder;
+    transition: 0.4s;
+}
+
+.email-address button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-200px, 80px);
+    background-color: #6ab04c;
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 4px;
+    color: #fff;
+    opacity: 1;
+    font-size: 25px;
+    font-weight: bolder;
+    transition: 0.4s;
+}
+
+.phone-number button:hover {
+    border-radius: 20px;
+    opacity: 1;
+    background-color: #333333;
+}
+
+.email-address button:hover {
+    border-radius: 20px;
+    opacity: 1;
+    background-color: #333333;
+}

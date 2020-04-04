@@ -23,32 +23,6 @@ body {
     color: #fff;
 }
 
-
-
-
-
-
-
-/*.index button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-90px, 30px);
-    background-color: #6ab04c;
-    color: #fff;
-    border: none;
-    height: 70px;
-    width: 200px;
-    border-radius: 20px;
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    transition-duration: 0.8s;
-}
-
-.index button :hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}*/
-
 .index button {
     display: inline-block;
     border-radius: 20px;
