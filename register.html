@@ -2,55 +2,56 @@
 <html lang="en">
 
 <head>
-
-    <!-- Required meta tags -->
+ 
+        <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1>  
 
     <!-- Fonts -->
-    <link rel=" dns-prefetch " href="https://fonts.gstatic.com ">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600 " rel="stylesheet " type="text/css ">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css " rel="stylesheet " id="bootstrap-css ">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js "></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
-    <script src="https://kit.fontawesome.com/cfeb05e6a3.js " crossorigin="anonymous "></script>
-    <link rel="stylesheet " href="CSS/stylesheet_header.css ">
-    <link rel="stylesheet " href="CSS/register11.css ">
-    <link rel="icon " href="Images/favicon-32x32.png ">
-    <a href="# " class="alert-link "></a> 
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/cfeb05e6a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/stylesheet_header.css">
+    <link rel="stylesheet" href="CSS/register11.css">
+    <link rel="icon" href="Images/favicon-32x32.png">
+    <a href="#" class="alert-link"></a> 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet " href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css "> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
 
     <title>कृषिवल:-Registration</title>       
 </head>
 
 <body>
             <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js "></script>
-        <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js "></script>
+        <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
 
         <!-- TODO: Add SDKs for Firebase products that you want to use
             https://firebase.google.com/docs/web/setup#available-libraries -->
-        <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js "></script>
+        <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
 
         <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
-            apiKey: "AIzaSyDXM0hs75zaUKRuye1x_t-0jr937-lb0uQ ",
-            authDomain: "ieee-project-e5335.firebaseapp.com ",
-            databaseURL: "https://ieee-project-e5335.firebaseio.com ",
-            projectId: "ieee-project-e5335 ",
-            storageBucket: "ieee-project-e5335.appspot.com ",
-            messagingSenderId: "806882001885 ",
-            appId: "1:806882001885:web:a965513e14cf230e89ac34 ",
-            measurementId: "G-13F39FTD8J "
+            apiKey: "AIzaSyDXM0hs75zaUKRuye1x_t-0jr937-lb0uQ",
+            authDomain: "ieee-project-e5335.firebaseapp.com",
+            databaseURL: "https://ieee-project-e5335.firebaseio.com",
+            projectId: "ieee-project-e5335",
+            storageBucket: "ieee-project-e5335.appspot.com",
+            messagingSenderId: "806882001885",
+            appId: "1:806882001885:web:a965513e14cf230e89ac34",
+            measurementId: "G-13F39FTD8J"
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
             function writeData(){
 
                 firebase.database().ref().push().set({
+<<<<<<< HEAD
                    full_name: document.getElementById("full_name ").value,   
                    email_address: document.getElementById("email_address ").value,
                    username: document.getElementById("user_name ").value,
@@ -58,6 +59,14 @@
                    confirm_password: document.getElementById("confirm_password ").value,
                    phone_number: document.getElementById("phone_number ").value,          
                  
+=======
+                   full_name: document.getElementById("full_name").value,   
+                   email_address: document.getElementById("email_address").value,
+                   username: document.getElementById("user_name").value,
+                   password: document.getElementById("password").value,
+                   confirm_password: document.getElementById("confirm_password").value,
+                   phone_number: document.getElementById("phone_number").value            
+>>>>>>> parent of d4c838b... after signup page path added
                 });
                 window.location.href="home.html ";
             }
@@ -68,18 +77,18 @@
 
 
         <!--header-->
-    <div class="header ">
-        <div class="site-name ">
-            <h1 id="logo "><a href="index.html ">कृषिवल:</a></h1>
+    <div class="header">
+        <div class="site-name">
+            <h1 id="logo"><a href="index.html">कृषिवल:</a></h1>
         </div>
-        <div class="search ">
-            <form action="# " method="post ">
-                <div class="input-group ">
-                    <div class="search-up ">
-                        <input type="search " class="form-control " id="search1 " placeholder="Search.... " required=" ">
+        <div class="search">
+            <form action="#" method="post">
+                <div class="input-group">
+                    <div class="search-up">
+                        <input type="search" class="form-control" id="search1" placeholder="Search...." required="">
                     </div>
-                    <span class="input-group-btn ">
-							<button class="btn-search " type="submit "><span class="fa fa-search "></span></button>
+                    <span class="input-group-btn">
+							<button class="btn-search" type="submit"><span class="fa fa-search"></span></button>
                     </span>
                 </div>
             </form>
@@ -87,17 +96,17 @@
 
     </div>
     <!-- //header -->
-    <div class="top-nav ">
-        <nav class="navbar navbar-default navbar-fixed-top ">
-            <div class="container ">
+    <div class="top-nav">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
                 <!-- navigation -->
-                <div id="nav " class="nav-to-pages ">
-                    <ul class="navbar-nav ">
-                        <li><a id="home " href="home.html " class="nav-tabs ">Home</a></li>
-                        <li><a id="about " href="about.html " class="nav-tabs ">About</a></li>
-                        <li><a id="login " href="login.html " class="nav-tabs ">Login</a></li>
-                        <li><a id="register " href="register.html " class="nav-tabs ">Register</a></li>
-                      <!--  <li><a id="contact " href="contactus.html " class="nav-tabs ">Contact</a></li> -->
+                <div id="nav" class="nav-to-pages">
+                    <ul class="navbar-nav">
+                        <li><a id="home" href="home.html " class="nav-tabs">Home</a></li>
+                        <li><a id="about" href="about.html" class="nav-tabs">About</a></li>
+                        <li><a id="login" href="login.html" class="nav-tabs">Login</a></li>
+                        <li><a id="register" href="register.html" class="nav-tabs">Register</a></li>
+                      <!--  <li><a id="contact" href="contactus.html" class="nav-tabs">Contact</a></li> -->
                     </ul>
                 </div>
                 <!--//navigation-->
@@ -112,58 +121,58 @@
 
 
       
-          <main class="my-form ">
-            <div class="cotainer ">
-                <div class="row justify-content-center ">
-                    <div class="col-md-8 ">
-                        <div class="card ">
-                            <div class="card-header " style="text-align: center;font-size: 20px;font-weight: 500; ">Signup</div>
-                            <div class="card-body ">
-                                <form action="home.html ">
-                                    <div class="form-group row ">
-                                        <label for="full_name " class="col-md-4 col-form-label text-md-right ">Full Name</label>
-                                        <div class="col-md-6 ">
-                                             <input type="text " id="full_name " class="from-control " placeholder="full-name ">
+          <main class="my-form">
+            <div class="cotainer">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header" style="text-align: center;font-size: 20px;font-weight: 500;">Signup</div>
+                            <div class="card-body">
+                                
+                                    <div class="form-group row">
+                                        <label for="full_name" class="col-md-4 col-form-label text-md-right">Full Name</label>
+                                        <div class="col-md-6">
+                                             <input type="text" id="full_name" class="from-control" placeholder="full-name">
                                         </div>
                                     </div>
                                         
-                                    <div class="form-group row ">
-                                        <label for="email_address " class="col-md-4 col-form-label text-md-right ">E-Mail Address</label>
-                                        <div class="col-md-6 ">
-                                            <input type="email " id="email_address " class="from-control " placeholder="email-address ">
+                                    <div class="form-group row">
+                                        <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                                        <div class="col-md-6">
+                                            <input type="email" id="email_address" class="from-control" placeholder="email-address">
                                         </div>
                                     </div>
 
-                                    <div class="form-group row ">
-                                        <label for="user_name " class="col-md-4 col-form-label text-md-right ">User Name</label>
-                                        <div class="col-md-6 ">
-                                            <input type="text " id="user_name " class="from-control " placeholder="username ">
+                                    <div class="form-group row">
+                                        <label for="user_name" class="col-md-4 col-form-label text-md-right">User Name</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="user_name" class="from-control" placeholder="username">
                                         </div>
                                     </div>
-                                    <div class="form-group row ">
-                                        <label for="password " class="col-md-4 col-form-label text-md-right ">Password</label>
-                                        <div class="col-md-6 ">
-                                            <input type="password " id="password " class="from-control " placeholder="Password ">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row ">
-                                        <label for="confirm_password " class="col-md-4 col-form-label text-md-right ">Confirm Password</label>
-                                        <div class="col-md-6 ">
-                                            <input type="password " id="confirm_password " class="from-control " placeholder="confirm_password ">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row ">
-                                        <label for="phone_number " class="col-md-4 col-form-label text-md-right ">Phone Number</label>
-                                        <div class="col-md-6 ">
-                                            <input type="number " id="phone_number " class="from-control " placeholder="phone_number ">
+                                    <div class="form-group row">
+                                        <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                                        <div class="col-md-6">
+                                            <input type="password" id="password" class="from-control" placeholder="Password">
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6 offset-md-4 " >
-                                        <button onclick="writeData() ">Signup</button>
+                                    <div class="form-group row">
+                                        <label for="confirm_password" class="col-md-4 col-form-label text-md-right">Confirm Password</label>
+                                        <div class="col-md-6">
+                                            <input type="password" id="confirm_password" class="from-control" placeholder="confirm_password">
+                                        </div>
                                     </div>
-                                </form>
+                                    <div class="form-group row">
+                                        <label for="phone_number" class="col-md-4 col-form-label text-md-right">Phone Number</label>
+                                        <div class="col-md-6">
+                                            <input type="number" id="phone_number" class="from-control" placeholder="phone_number">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 offset-md-4">
+                                        <button onclick="writeData()">Signup</button>
+                                    </div>
+                                    
                             </div>
                         </div>
                     </div>
@@ -176,12 +185,14 @@
 
 
     
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "></script>
-<script src="js/register.js "></script>    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="js/register.js"></script>    
 
     
 </body>
 
 </html>
+
+
