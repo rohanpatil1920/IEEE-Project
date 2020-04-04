@@ -49,17 +49,14 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
             function writeData(){
-
                 firebase.database().ref().push().set({
                    full_name: document.getElementById("full_name ").value,   
                    email_address: document.getElementById("email_address ").value,
                    username: document.getElementById("user_name ").value,
                    password: document.getElementById("password ").value,
                    confirm_password: document.getElementById("confirm_password ").value,
-                   phone_number: document.getElementById("phone_number ").value,          
-                 
+                   phone_number: document.getElementById("phone_number ").value            
                 });
-                window.location.href="home.html ";
             }
         firebase.analytics();
         </script>
