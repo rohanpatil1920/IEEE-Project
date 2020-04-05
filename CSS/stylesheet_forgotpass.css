@@ -172,4 +172,5 @@ body {
 
 .recovery #submit-button:hover {
     background-color: #111111;
+    cursor: pointer;
 }
