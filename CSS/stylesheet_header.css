@@ -43,7 +43,9 @@
     padding: 6px 10px;
     font-size: 17px;
     cursor: pointer;
-    transform: translate(85em, -0.9em);
+    position: absolute;
+    left: 90%;
+    transform: translate(100px, -15px);
     color: #000;
 }
 
