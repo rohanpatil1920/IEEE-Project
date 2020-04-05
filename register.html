@@ -5,23 +5,24 @@
  
         <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1>  
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/cfeb05e6a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/stylesheet_reg_header.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+    <!--<link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/cfeb05e6a3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/stylesheet_header.css">
-    <link rel="stylesheet" href="CSS/register11.css">
-    <link rel="icon" href="Images/favicon-32x32.png">
+    
+    
+   
     <a href="#" class="alert-link"></a> 
-
+    -->
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
-
+  <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+  -->
     <title>कृषिवल:-Registration</title>       
 </head>
 
@@ -29,6 +30,8 @@
             <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+
+        <script src="/__/firebase/7.13.2/firebase-auth.js"></script>
 
         <!-- TODO: Add SDKs for Firebase products that you want to use
             https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -51,34 +54,14 @@
             function writeData(){
 
                 firebase.database().ref().push().set({
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                   full_name: document.getElementById("full_name ").value,   
-                   email_address: document.getElementById("email_address ").value,
-                   username: document.getElementById("user_name ").value,
-                   password: document.getElementById("password ").value,
-                   confirm_password: document.getElementById("confirm_password ").value,
-                   phone_number: document.getElementById("phone_number ").value,          
-                 
-=======
-=======
->>>>>>> parent of d4c838b... after signup page path added
-=======
->>>>>>> parent of d4c838b... after signup page path added
+
                    full_name: document.getElementById("full_name").value,   
                    email_address: document.getElementById("email_address").value,
                    username: document.getElementById("user_name").value,
                    password: document.getElementById("password").value,
                    confirm_password: document.getElementById("confirm_password").value,
-                   phone_number: document.getElementById("phone_number").value            
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of d4c838b... after signup page path added
-=======
->>>>>>> parent of d4c838b... after signup page path added
-=======
->>>>>>> parent of d4c838b... after signup page path added
+                   phone_number: document.getElementById("phone_number").value          
+                 
                 });
             }
         firebase.analytics();
@@ -196,11 +179,11 @@
 
 
     
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script src="js/register.js"></script>    
-
+-->
     
 </body>
 
