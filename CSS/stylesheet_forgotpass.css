@@ -10,7 +10,8 @@ body {
     margin-top: 50px;
 }
 
-.phone-number button {
+
+/*.phone-number button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -54,4 +55,100 @@ body {
     border-radius: 20px;
     opacity: 1;
     background-color: #333333;
+}*/
+
+.recoverbyphone h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+    background-color: #6ab04c;
+    border-radius: 4px;
+    animation-name: bg;
+    animation-duration: 5s;
+    width: 25%;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-170px, -80px);
+}
+
+@keyframes bg {
+    from {
+        opacity: 0.6;
+        background-color: #333333;
+    }
+    to {
+        opacity: 1;
+        background-color: #6ab04c;
+    }
+}
+
+.recoverbyphone input {
+    font-size: large;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    margin-top: 50px;
+    color: #000000;
+    width: 15%;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90px, -20px);
+    box-shadow: none;
+    transition: 0.4s;
+}
+
+.recoverbyphone input:hover {
+    box-shadow: 5px 1px 7px #0984e3;
+}
+
+.recoverbyemail h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+    background-color: #6ab04c;
+    border-radius: 4px;
+    animation-name: bg;
+    animation-duration: 5s;
+    width: 25%;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-170px, 70px);
+}
+
+@keyframes bg {
+    from {
+        opacity: 0.6;
+        background-color: #333333;
+    }
+    to {
+        opacity: 1;
+        background-color: #6ab04c;
+    }
+}
+
+.recoverbyemail input {
+    font-size: large;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    margin-top: 50px;
+    color: #000000;
+    width: 15%;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90px, 130px);
+    box-shadow: none;
+    transition: 0.4s;
+}
+
+.recoverbyemail input:hover {
+    box-shadow: 5px 1px 7px #0984e3;
 }
