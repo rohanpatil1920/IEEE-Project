@@ -27,19 +27,6 @@ body {
     margin-right: 0;
 }
 
-.card-header p {
-    color: #ffffff;
-    font-size: 40px;
-    font-weight: 900;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 50%;
-    opacity: 1;
-    /*background-size: 1000px;*/
-    transform: translateY( -150px);
-}
-
 .row {
     margin-top: 10px;
     position: absolute;
@@ -51,7 +38,7 @@ body {
 
 .row #full_name {
     margin-top: 20px;
-    transform: translateY(-100px);
+    transform: translateY(-120px);
     border: none;
     width: 150%;
     font-size: 25px;
@@ -63,7 +50,7 @@ body {
 
 .row #email_address {
     margin-top: 20px;
-    transform: translateY(-60px);
+    transform: translateY(-80px);
     border: none;
     width: 150%;
     font-size: 25px;
@@ -75,7 +62,7 @@ body {
 
 .row #phone_number {
     margin-top: 20px;
-    transform: translateY(-20px);
+    transform: translateY(-40px);
     border: none;
     width: 150%;
     font-size: 25px;
@@ -87,7 +74,7 @@ body {
 
 .row #user_name {
     margin-top: 20px;
-    transform: translateY(20px);
+    transform: translateY(0px);
     border: none;
     width: 150%;
     font-size: 25px;
@@ -99,7 +86,7 @@ body {
 
 .row #password {
     margin-top: 20px;
-    transform: translateY(60px);
+    transform: translateY(40px);
     border: none;
     width: 150%;
     font-size: 25px;
@@ -111,7 +98,19 @@ body {
 
 .row #confirm_password {
     margin-top: 20px;
-    transform: translateY(100px);
+    transform: translateY(80px);
+    border: none;
+    width: 150%;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 5px 3px 7px black;
+}
+
+.row #list_client {
+    margin-top: 20px;
+    transform: translateY(120px);
     border: none;
     width: 150%;
     font-size: 25px;
