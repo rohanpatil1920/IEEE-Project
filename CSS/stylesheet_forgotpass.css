@@ -70,7 +70,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-170px, -80px);
+    transform: translate(-170px, -130px);
 }
 
 @keyframes bg {
@@ -96,7 +96,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-90px, -20px);
+    transform: translate(-90px, -80px);
     box-shadow: none;
     transition: 0.4s;
 }
@@ -118,7 +118,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-170px, 70px);
+    transform: translate(-170px, 0px);
 }
 
 @keyframes bg {
@@ -144,11 +144,32 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-90px, 130px);
+    transform: translate(-90px, 50px);
     box-shadow: none;
     transition: 0.4s;
 }
 
 .recoverbyemail input:hover {
     box-shadow: 5px 1px 7px #0984e3;
+}
+
+.recovery #submit-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25px, 170px);
+    border: none;
+    width: 8%;
+    height: 5%;
+    border-radius: 20px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: 800;
+    transition: 0.5s;
+}
+
+.recovery #submit-button:hover {
+    background-color: #111111;
 }
