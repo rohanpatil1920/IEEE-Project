@@ -28,8 +28,6 @@ body {
 }
 
 .card-header p {
-    border-bottom: 2px solid #666666;
-    border-top: 2px solid #666666;
     color: #ffffff;
     font-size: 40px;
     font-weight: 900;
@@ -38,23 +36,8 @@ body {
     text-align: center;
     top: 50%;
     opacity: 1;
-    background-color: #6ab04c;
     /*background-size: 1000px;*/
-    animation-name: signup;
-    animation-duration: 5s;
-    animation-delay: 2s;
     transform: translateY( -150px);
-}
-
-@keyframes signup {
-    from {
-        background-image: url(../Images/Index_Background.jpg);
-        opacity: 0;
-    }
-    to {
-        background-color: #6ab04c;
-        opacity: 1;
-    }
 }
 
 .row {
