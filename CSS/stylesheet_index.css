@@ -37,9 +37,16 @@ body {
     cursor: pointer;
     position: absolute;
     top: 63%;
-    left: 45%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
+@media screen and (max-width: 600px) {
+  .index button {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 .index button span {
     cursor: pointer;
     display: inline-block;
