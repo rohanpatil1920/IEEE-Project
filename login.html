@@ -2,29 +2,81 @@
 <html>
 
 <head>
-
-    <link rel="stylesheet" type="text/css" href="CSS/stylesheet_login.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <!--mETA TAGS-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--meta tags end here-->
+    <link rel="stylesheet" type="text/css" href="CSS/stylesheet_login.css">    
+    <link rel="stylesheet" type="text/css" href="CSS/stylesheet_header.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">   
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
-    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+    <title>कृषिवल:-Home</title>
+
+
 </head>
 
 <body>
-    <div class="btn-to-home">
+     <!-- Krypton : Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Icon -->
+        <a class="navbar-brand"href="#">Krushival:</a>
+        <!-- TODO: add the LOGO -->
+  
+        <!-- Hamburger button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Actual div to hold the links -->
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a id="about" href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a id="login" href="login.html" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+              <a id="register" href="register.html" class="nav-link">Register</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control my-5 my-sm-0 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <!-- Krypton : Navbar end -->
+
+
+
+
+
+
+
+
+
+    <!-- <div class="btn-to-home">
         <form action="home.html">
             <button type="submit">Home</button>
         </form>
-    </div>
+    </div> -->
     <div class="container">
-        <img class="wave" src="Images/wave.png">
+<!--        <img class="wave" src="Images/wave.png">  -->        
         <div class="container">
             <div class="img">
-                <img src="Images/bg.svg">
+                <img src="Images/bg.svg">                 
             </div>
             <div id="login_div" class="login-content">
                 <form class="login-form">
-                    <img class="avatar" src="Images/avatar.svg">
+                    <img class="avatar" src="Images/avatar.svg">        
                     <div class="input-div one">
                         <div class="i">
                             <i class="fas fa-user"></i>
@@ -43,7 +95,7 @@
                     </div>
                     <a href="forgotpass.html">Forgot Password?</a>
                    <!-- <input type="submit" onclick="login()" class="btn" value="Login">   -->
-                    <button type="submit" onclick="login()" class="btn" value="Login" >Login to account</button>
+                    <button type="submit" onclick="login()" class="butt" value="Login" >Login to account</button>
                 </form>
             </div>
         </div>
@@ -51,11 +103,11 @@
         <script src="js/login.js"></script>
     </div>
 
-    <div id="user_div" class="loggedin-div">
+<!--    <div id="user_div" class="loggedin-div">
         <h3>Welcome User</h3>
         <p>WElcome to firebase login.you are logged in</p>
         <button>Logout</button>
-    </div>
+    </div> -->
 
 
 
