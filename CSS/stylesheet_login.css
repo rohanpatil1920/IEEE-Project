@@ -7,8 +7,7 @@
     body {
         font-family: 'Poppins', sans-serif;
     }
-    
-  /*  .wave {       
+    /*  .wave {       
         position: relative;
         align-self: start;
         bottom: 0;
@@ -28,13 +27,15 @@
         padding: 0 2rem;
     }
     
-    .img {
-        align-items: flex-start;
-        display: flex;  
-        height: 100%;   
-        justify-content: flex-end;  
+    .img img {
+        /*    align-items: flex-start;
+        display: flex;
+        height: 90%;
+        justify-content: flex-end;
+        position: relative;*/
         position: relative;
-        
+        top: 15%;
+        left: -15%;
     }
     
     .avatar {
@@ -189,8 +190,6 @@
         transition: .5s;
     }
     
-
-
     .btn:hover {
         background-position: right;
     }
