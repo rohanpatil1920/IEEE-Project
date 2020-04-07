@@ -4,51 +4,13 @@
 <head>
 
     <link rel="stylesheet" type="text/css" href="CSS/stylesheet_login.css">
-    <link rel="stylesheet" href="CSS/stylesheet_header.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/cfeb05e6a3.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
     <title>Login</title>
 </head>
 
 <body>
-<<<<<<< HEAD
-
-    <!--header-->
-    <div class="header">
-        <div class="site-name">
-            <h1 id="logo"><a href="index.html">कृषिवल:</a></h1>
-        </div>
-        <div class="search">
-            <form action="#" method="post">
-                <div class="input-group">
-                    <div class="search-up">
-                        <input type="search" class="form-control" id="search1" placeholder="Search...." required="">
-                    </div>
-                    <span class="input-group-btn">
-							<button class="btn-search" type="submit"><span class="fa fa-search"></span></button>
-                    </span>
-                </div>
-            </form>
-        </div>
-
-    </div>
-    <!-- //header -->
-    <div class="top-nav">
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <!-- navigation -->
-                <div id="nav" class="nav-to-pages">
-                    <ul class="navbar-nav">
-                        <li><a id="home" href="home.html " class="nav-tabs">Home</a></li>
-                        <li><a id="about" href="about.html" class="nav-tabs">About</a></li>
-                        <li><a id="login" href="login.html" class="nav-tabs">Login</a></li>
-                        <li><a id="register" href="register.html" class="nav-tabs">Register</a></li>
-                        <!--  <li><a id="contact" href="contactus.html" class="nav-tabs">Contact</a></li> -->
-                    </ul>
-                </div>
-                <!--//navigation-->
-=======
     <div class="btn-to-home">
         <form action="home.html">
             <button type="submit">Home</button>
@@ -60,58 +22,38 @@
             <div class="img">
                 <img src="Images/bg.svg">
             </div>
-            <div id="login_div" class="login-content">
+            <div class="login-content">
                 <form class="login-form">
                     <img class="avatar" src="Images/avatar.svg">
                     <div class="input-div one">
                         <div class="i">
                             <i class="fas fa-user"></i>
                         </div>
-                        <div class="div">                     
-                            <input type="text" placeholder="Email..." id="email_field" class="input">
+                        <div class="div">
+                            <h5>Username</h5>
+                            <input type="text" class="input">
                         </div>
                     </div>
                     <div class="input-div pass">
                         <div class="i">
                             <i class="fas fa-lock"></i>
                         </div>
-                        <div class="div">                            
-                            <input type="password" placeholder="Password..." id="password_field" class="input">
+                        <div class="div">
+                            <h5>Password</h5>
+                            <input type="password" class="input">
                         </div>
                     </div>
                     <a href="forgotpass.html">Forgot Password?</a>
-                   <!-- <input type="submit" onclick="login()" class="btn" value="Login">   -->
-                    <button type="submit" onclick="login()" class="btn" value="Login" >Login to account</button>
+                    <div class="btn-after-login">
+                        <form action="home.html">
+                            <button class="btn" type="submit">Login TO Your Account</button>
+                        </form>
+
                 </form>
->>>>>>> 8657708665c5cda444aa599f3a263e14d60520ea
+                </div>
             </div>
-        </nav>
-    </div>
-    <div id="login-form">
-        <div class="login">
-            <h1>Login</h1>
-            <input type="text" name="email-id" placeholder="Email ID">
-            <input type="password" name="password" placeholder="Password">
-            <a href="forgotpass.html">Forgot Password ?</a>
-            <input type="submit" name="submit" value="Login To Your Account">
+            <!--script type="text/javascript" src="js/main.js"></script-->
         </div>
-<<<<<<< HEAD
-=======
-        <!--script type="text/javascript" src="js/main.js"></script-->
-        <script src="js/login.js"></script>
->>>>>>> 8657708665c5cda444aa599f3a263e14d60520ea
-    </div>
-
-    <div id="user_div" class="loggedin-div">
-        <h3>Welcome User</h3>
-        <p>WElcome to firebase login.you are logged in</p>
-        <button>Logout</button>
-    </div>
-
-
-
-  
-     
 </body>
 
 </html>
