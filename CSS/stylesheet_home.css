@@ -27,3 +27,12 @@ body {
     color: #fff;
     border-bottom: 5px solid black;
 }
+
+.logo {
+    padding: 50px;
+    width: 5%;
+    height: 10%;
+    position: absolute;
+    left: 70%;
+    transform: translateX(50px);
+}
