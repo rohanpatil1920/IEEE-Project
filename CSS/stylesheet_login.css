@@ -190,7 +190,7 @@
         transition: .5s;
     }
     
-    .btn:hover {
+    .butt:hover {
         background-position: right;
     }
     
@@ -226,27 +226,4 @@
         .login-content {
             justify-content: center;
         }
-    }
-    
-    .btn-to-home button {
-        padding: 10px;
-        position: absolute;
-        top: 5%;
-        left: 5%;
-        background-color: #333333;
-        overflow: hidden;
-        color: #fff;
-        border: none;
-        height: 70px;
-        width: 150px;
-        font-size: 30px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        transition-property: background-color;
-        transition: 0.5s;
-    }
-    
-    .btn-to-home button:hover {
-        background-color: #32be8f;
-        cursor: pointer;
-        border-radius: 20px;
     }

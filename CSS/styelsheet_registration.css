@@ -1,48 +1,61 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-body {
-    margin: 0;
-    font-size: .9rem;
-    font-weight: 400;
-    line-height: 1.6;
-    background-image: url(../Images/Index_Background.jpg);
-}
-
-.row input {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    margin: 0.5%;
-    padding: 4px;
-    transform: translate(-150px, 100px);
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    font-family: sans-serif;
-    width: 350px;
-    font-size: large;
-    font-weight: 500;
-    box-shadow: 0 4px 4px #000000;
-}
-
-.signup button {
-    margin: 0;
-    padding: 7px;
-    padding-bottom: 10px;
-    width: 200px;
-    font-size: x-large;
-    font-weight: 700;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    color: #fff;
-    background: #000;
-    position: absolute;
-    left: 50%;
-    transform: translate(-70px, 150px);
-    transition: 0.4s ease;
-}
-
-.signup button:hover {
-    border-radius: 25px;
-    background: #111111;
-}
+    @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+    body {
+        margin: 0;
+        font-size: .9rem;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+    
+    .register {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .register img {
+        height: 500px;
+        width: 100%;
+        position: relative;
+        transform: translate(-150px, 20px);
+    }
+    
+    .signup-form {
+        width: 360px
+    }
+    
+    .row input {
+        position: relative;
+        margin: 1.5%;
+        padding: 4px;
+        transform: translate(-300px, -20px);
+        border-radius: 4px;
+        border: none;
+        border-bottom: 2px solid #777777;
+        font-family: sans-serif;
+        width: 300px;
+        font-size: large;
+        font-weight: 500;
+    }
+    
+    .signup button {
+        margin: 0;
+        padding: 7px;
+        padding-bottom: 10px;
+        width: 200px;
+        font-size: x-large;
+        font-weight: 700;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        color: #fff;
+        background: #32be8f;
+        position: absolute;
+        transform: translateX(-455px);
+        transition: 0.4s ease;
+    }
+    
+    .signup button:hover {
+        border-radius: 18px;
+        background: #32af8f;
+    }
