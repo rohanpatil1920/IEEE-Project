@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="CSS/stylesheet_header.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-   
+
     <!--<link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -75,113 +75,69 @@
 
 
 
-  <!-- Krypton : Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- Icon -->
-    <a class="navbar-brand"href="#">Krushival:</a>
-    <!-- TODO: add the LOGO -->
+    <!-- Krypton : Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Icon -->
+        <a class="navbar-brand" href="#">Krushival:</a>
+        <!-- TODO: add the LOGO -->
 
-    <!-- Hamburger button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Hamburger button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Actual div to hold the links -->
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a id="about" href="about.html" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a id="login" href="login.html" class="nav-link">Login</a>
-        </li>
-        <li class="nav-item">
-          <a id="register" href="register.html" class="nav-link">Register</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control my-5 my-sm-0 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-  <!-- Krypton : Navbar end -->
+        <!-- Actual div to hold the links -->
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a id="about" href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a id="login" href="login.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a id="register" href="register.html" class="nav-link">Register</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control my-5 my-sm-0 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- Krypton : Navbar end -->
 
-
-
-  
-
-
-
-
-
-
-
-
-    <main class="my-form">
-        <div class="cotainer">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-body">
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" id="full_name" class="from-control" placeholder="Full Name" required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="email" id="email_address" class="from-control" placeholder="Email Address" required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" id="user_name" class="from-control" placeholder="Username" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="password" id="password" class="from-control" placeholder="Password" required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="password" id="confirm_password" class="from-control" placeholder="Confirm Password" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="number" id="phone_number" class="from-control" placeholder="Phone Number" required>
-                            </div>
-                        </div>
-
-                        <div class="signup">
-                            <button onclick="writeData()">Signup</button>
-                        </div>
-                        <div class="row">
-                            <input id="list_client" list="type" name="clientType" placeholder="Type of Client">
-                            <datalist id="type">
+    <div class="signup-form">
+        <div class="row">
+            <input type="text" id="full_name" class="from-control" placeholder="Full Name" required>
+        </div>
+        <div class="row">
+            <input type="email" id="email_address" class="from-control" placeholder="Email Address" required>
+        </div>
+        <div class="row">
+            <input type="password" id="password" class="from-control" placeholder="Password" required>
+        </div>
+        <div class="row">
+            <input type="password" id="confirm_password" class="from-control" placeholder="Confirm Password" required>
+        </div>
+        <div class="row">
+            <input type="number" id="phone_number" class="from-control" placeholder="Phone Number" required>
+        </div>
+        <div class="row">
+            <input id="list_client" list="type" name="clientType" placeholder="Type of Client">
+            <datalist id="type">
                               <option value="Consumer">
                               <option value="Grampanchayat">
-                            </datalist>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+             </datalist>
         </div>
-    </main>
+        <div class="signup">
+            <button onclick="writeData()">Signup</button>
+        </div>
 
-
-
-
-
+    </div>
 
     <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
