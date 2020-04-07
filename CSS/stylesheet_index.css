@@ -36,17 +36,10 @@ body {
     transition: all 0.5s;
     cursor: pointer;
     position: absolute;
-    top: 63%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 53%;
+    left: 45%;
 }
 
-@media screen and (max-width: 600px) {
-  .index button {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
 .index button span {
     cursor: pointer;
     display: inline-block;
