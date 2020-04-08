@@ -1,80 +1,68 @@
-<!Doctype html>
-<html lang="en">
-
-<head>
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>कृषिवल:-Home</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script src="https://kit.fontawesome.com/cfeb05e6a3.js" crossorigin="anonymous"></script>
-
     <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">   
-    <link rel="stylesheet" href="CSS/styelsheet_registration.css">
+    <script src="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css" />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <link rel="stylesheet" href="CSS/stylesheet_home.css">
     <link rel="stylesheet" href="CSS/stylesheet_header.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <!--<link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-    
-   
-    <a href="#" class="alert-link"></a> 
-    -->
-    <!-- Bootstrap CSS -->
-    <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
-  -->
-    <title>Registration</title>
-</head>
-
-<body>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-            https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
 
     <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyDXM0hs75zaUKRuye1x_t-0jr937-lb0uQ",
-            authDomain: "ieee-project-e5335.firebaseapp.com",
-            databaseURL: "https://ieee-project-e5335.firebaseio.com",
-            projectId: "ieee-project-e5335",
-            storageBucket: "ieee-project-e5335.appspot.com",
-            messagingSenderId: "806882001885",
-            appId: "1:806882001885:web:a965513e14cf230e89ac34",
-            measurementId: "G-13F39FTD8J"
-        };
+    // Your web app's Firebase configuration
+     var firebaseConfig = {
+       apiKey: "AIzaSyCUq4iqHKzckYm3PQ1_YrvkkUYq_Nv-dms",
+       authDomain: "ieee-krushival.firebaseapp.com",
+       databaseURL: "https://ieee-krushival.firebaseio.com",
+       projectId: "ieee-krushival",
+       storageBucket: "ieee-krushival.appspot.com",
+       messagingSenderId: "892909807247",
+       appId: "1:892909807247:web:b7ea76eae854484fdf72fa"
+     };
 
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
-
-        function writeData() {
-
-            firebase.database().ref().push().set({
-
-                full_name: document.getElementById("full_name").value,
-                email_address: document.getElementById("email_address").value,
-                username: document.getElementById("user_name").value,
-                password: document.getElementById("password").value,
-                confirm_password: document.getElementById("confirm_password").value,
-                phone_number: document.getElementById("phone_number").value
-
-            });
-        }
         firebase.analytics();
     </script>
+    <script type="text/javascript">
+      // FirebaseUI config.
+      var uiConfig = {
+        signInSuccessUrl: 'home.html',
+        signInOptions: [
+          // Leave the lines as is for the providers you want to offer your users.
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+          firebase.auth.EmailAuthProvider.PROVIDER_ID,
+          firebase.auth.PhoneAuthProvider.PROVIDER_ID
+        ],
+        // tosUrl and privacyPolicyUrl accept either url string or a callback
+        // function.
+        // Terms of service url/callback.
+        tosUrl: '<your-tos-url>',
+        // Privacy policy url/callback.
+        privacyPolicyUrl: function() {
+          window.location.assign('<your-privacy-policy-url>');
+        }
+      };
 
-
+      // Initialize the FirebaseUI Widget using Firebase.
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      // The start method will wait until the DOM is loaded.
+      ui.start('#firebaseui-auth-container', uiConfig);
+    </script>
+  </head>
+  <body>
 
     <!-- Krypton : Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -84,8 +72,8 @@
 
         <!-- Hamburger button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
         <!-- Actual div to hold the links -->
         <div class="collapse navbar-collapse">
@@ -110,46 +98,9 @@
         </div>
     </nav>
     <!-- Krypton : Navbar end -->
-
-
-    <div class="register">
-        <img src="Images/bg.svg">
-   <!--     <img class="avat" src="Images/avatar.svg">   --> 
-        <div class="signup-form">
-            <div class="row">
-                <input type="text" id="full_name" class="from-control" placeholder="Full Name" required>
-            </div>
-            <div class="row">
-                <input type="email" id="email_address" class="from-control" placeholder="Email Address" required>
-            </div>
-            <div class="row">
-                <input type="password" id="password" class="from-control" placeholder="Password" required>
-            </div>
-            <div class="row">
-                <input type="password" id="confirm_password" class="from-control" placeholder="Confirm Password" required>
-            </div>
-            <div class="row">
-                <input type="number" id="phone_number" class="from-control" placeholder="Phone Number" required>
-            </div>
-            <div class="row">
-                <input id="list_client" list="type" name="clientType" placeholder="Type of Client">
-                <datalist id="type">
-                              <option value="Consumer">
-                              <option value="Grampanchayat">
-             </datalist>
-            </div>
-            <div class="signup">
-                <button onclick="writeData()">Signup</button>
-            </div>
-
-        </div>
-    </div>
-    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script src="js/register.js"></script>    
--->
-
-</body>
-
+    <!-- The surrounding HTML is left untouched by FirebaseUI.
+         Your app may use that space for branding, controls and other customizations.-->
+    <h1 style="text-align: center; color:red;">Welcome to कृषिवल:</h1>
+    <div id="firebaseui-auth-container"></div>
+  </body>
 </html>
