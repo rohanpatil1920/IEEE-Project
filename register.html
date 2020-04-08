@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>कृषिवल:-Home</title>
     <meta charset="UTF-8">
@@ -21,48 +22,49 @@
     <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
 
     <script>
-    // Your web app's Firebase configuration
-     var firebaseConfig = {
-       apiKey: "AIzaSyCUq4iqHKzckYm3PQ1_YrvkkUYq_Nv-dms",
-       authDomain: "ieee-krushival.firebaseapp.com",
-       databaseURL: "https://ieee-krushival.firebaseio.com",
-       projectId: "ieee-krushival",
-       storageBucket: "ieee-krushival.appspot.com",
-       messagingSenderId: "892909807247",
-       appId: "1:892909807247:web:b7ea76eae854484fdf72fa"
-     };
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCUq4iqHKzckYm3PQ1_YrvkkUYq_Nv-dms",
+            authDomain: "ieee-krushival.firebaseapp.com",
+            databaseURL: "https://ieee-krushival.firebaseio.com",
+            projectId: "ieee-krushival",
+            storageBucket: "ieee-krushival.appspot.com",
+            messagingSenderId: "892909807247",
+            appId: "1:892909807247:web:b7ea76eae854484fdf72fa"
+        };
 
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
     </script>
     <script type="text/javascript">
-      // FirebaseUI config.
-      var uiConfig = {
-        signInSuccessUrl: 'dashboard.html',
-        signInOptions: [
-          // Leave the lines as is for the providers you want to offer your users.
-          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-          firebase.auth.EmailAuthProvider.PROVIDER_ID,
-          firebase.auth.PhoneAuthProvider.PROVIDER_ID
-        ],
-        // tosUrl and privacyPolicyUrl accept either url string or a callback
-        // function.
-        // Terms of service url/callback.
-        tosUrl: '<your-tos-url>',
-        // Privacy policy url/callback.
-        privacyPolicyUrl: function() {
-          window.location.assign('<your-privacy-policy-url>');
-        }
-      };
+        // FirebaseUI config.
+        var uiConfig = {
+            signInSuccessUrl: 'dashboard.html',
+            signInOptions: [
+                // Leave the lines as is for the providers you want to offer your users.
+                firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+                firebase.auth.EmailAuthProvider.PROVIDER_ID,
+                firebase.auth.PhoneAuthProvider.PROVIDER_ID
+            ],
+            // tosUrl and privacyPolicyUrl accept either url string or a callback
+            // function.
+            // Terms of service url/callback.
+            tosUrl: '<your-tos-url>',
+            // Privacy policy url/callback.
+            privacyPolicyUrl: function() {
+                window.location.assign('<your-privacy-policy-url>');
+            }
+        };
 
-      // Initialize the FirebaseUI Widget using Firebase.
-      var ui = new firebaseui.auth.AuthUI(firebase.auth());
-      // The start method will wait until the DOM is loaded.
-      ui.start('#firebaseui-auth-container', uiConfig);
+        // Initialize the FirebaseUI Widget using Firebase.
+        var ui = new firebaseui.auth.AuthUI(firebase.auth());
+        // The start method will wait until the DOM is loaded.
+        ui.start('#firebaseui-auth-container', uiConfig);
     </script>
-  </head>
-  <body>
+</head>
+
+<body>
 
     <!-- Krypton : Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -85,9 +87,6 @@
                     <a id="about" href="about.html" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a id="login" href="login.html" class="nav-link">Login</a>
-                </li>
-                <li class="nav-item">
                     <a id="register" href="register.html" class="nav-link">Register</a>
                 </li>
             </ul>
@@ -102,5 +101,6 @@
          Your app may use that space for branding, controls and other customizations.-->
     <h1 style="text-align: center; color:red;">Welcome to कृषिवल:</h1>
     <div id="firebaseui-auth-container"></div>
-  </body>
+</body>
+
 </html>
