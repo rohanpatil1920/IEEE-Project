@@ -8,27 +8,30 @@
             font-size: xx-large;
         }
         
-        #farmer_data {
+        .details {
             font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
             border-collapse: collapse;
             width: 100%;
         }
         
-        #farmer_data td,
-        #farmer_data th {
+        .details td,
+        .details th {
+            width: auto;
             border: 1px solid #ddd;
             padding: 8px;
         }
         
-        #farmer_data tr:nth-child(even) {
+        .details tr:nth-child(even) {
+            width: auto;
             background-color: #f2f2f2;
         }
         
-        #farmer_data tr:hover {
+        .details tr:hover {
             background-color: #ddd;
         }
         
-        #farmer_data th {
+        .details th {
+            width: auto;
             padding-top: 12px;
             padding-bottom: 12px;
             text-align: left;
