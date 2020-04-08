@@ -1,0 +1,161 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://kit.fontawesome.com/cfeb05e6a3.js" crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth__en.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styelsheet_registration.css">
+    <link rel="stylesheet" href="CSS/stylesheet_header.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!--<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+    <a href="#" class="alert-link"></a>
+    -->
+    <!-- Bootstrap CSS -->
+    <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  -->
+    <title>Registration</title>
+</head>
+
+<body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+     var firebaseConfig = {
+       apiKey: "AIzaSyCUq4iqHKzckYm3PQ1_YrvkkUYq_Nv-dms",
+       authDomain: "ieee-krushival.firebaseapp.com",
+       databaseURL: "https://ieee-krushival.firebaseio.com",
+       projectId: "ieee-krushival",
+       storageBucket: "ieee-krushival.appspot.com",
+       messagingSenderId: "892909807247",
+       appId: "1:892909807247:web:b7ea76eae854484fdf72fa"
+     };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        function writeData() {
+
+            firebase.database().ref().push().set({
+
+                full_name: document.getElementById("full_name").value,
+                email_address: document.getElementById("email_address").value,
+                // username: document.getElementById("user_name").value,
+                password: document.getElementById("password").value,
+                confirm_password: document.getElementById("confirm_password").value,
+                phone_number: document.getElementById("phone_number").value
+
+            });
+        }
+        firebase.analytics();
+    </script>
+
+
+
+    <!-- Krypton : Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Icon -->
+        <a class="navbar-brand" href="#">Krushival:</a>
+        <!-- TODO: add the LOGO -->
+
+        <!-- Hamburger button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <!-- Actual div to hold the links -->
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a id="about" href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a id="login" href="login.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a id="register" href="register.html" class="nav-link">Register</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control my-5 my-sm-0 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- Krypton : Navbar end -->
+
+
+    <div class="register">
+        <img src="Images/bg.svg">
+   <!--     <img class="avat" src="Images/avatar.svg">   -->
+        <div class="signup-form">
+            <div class="row">
+                <input type="text" id="full_name" class="from-control" placeholder="Full Name" required>
+            </div>
+            <div class="row">
+                <input type="email" id="email_address" class="from-control" placeholder="Email Address" required>
+            </div>
+            <div class="row">
+                <input type="password" id="password" class="from-control" placeholder="Password" required>
+            </div>
+            <div class="row">
+                <input type="password" id="confirm_password" class="from-control" placeholder="Confirm Password" required>
+            </div>
+            <div class="row">
+                <input type="number" id="phone_number" class="from-control" placeholder="Phone Number" required>
+            </div>
+            <div class="row">
+                <input id="list_client" list="type" name="clientType" placeholder="Type of Client">
+                <datalist id="type">
+                              <option value="Consumer">
+                              <option value="Grampanchayat">
+             </datalist>
+            </div>
+            <div class="signup">
+                <button onclick="writeData()">Signup</button>
+            </div>
+
+        </div>
+    </div>
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="js/register.js"></script>
+-->
+
+</body>
+
+</html>
