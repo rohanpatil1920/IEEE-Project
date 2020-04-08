@@ -1,6 +1,7 @@
         body {
             margin: 0;
             padding: 0;
+            position: relative;
         }
         
         h3 {
@@ -9,9 +10,11 @@
         }
         
         .details {
-            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+           /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;  */
             border-collapse: collapse;
-            width: 100%;
+            width: fit-content;
+            position: relative;
+           
         }
         
         .details td,
@@ -40,14 +43,14 @@
         }
         
         .details button {
-            position: absolute;
+            position: relative;
             left: 85%;
             margin: 25px;
             border: none;
             outline: none;
             color: #fff;
             background: #4caf50;
-            width: 10%;
+            width: 13%;
             height: 5%;
             font-size: x-large;
             font-weight: 700;
