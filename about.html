@@ -1,54 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
+    <!--meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
-    <link rel="stylesheet" href="CSS/stylesheet_header.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--//meta tags ends here-->
+    <!-- <script src="https://kit.fontawesome.com/cfeb05e6a3.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="CSS/stylesheet_about.css">
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <title>About- कृषिवल: </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <title>कृषिवल:-Home</title>
+
+
 </head>
 
 <body>
 
+    <div class="navbar navbar-inverse sticky-top bg-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
 
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <a href="index.html" class="navbar-brand">कृषिवल</a>
+                    </div>
 
+                    <div class="navbar-collapse collapse" id="mobile_menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="home.html">Home</a></li>
+                            <li class="active"><a href="about.html">About Us</a></li>
+                            <li><a href="dashboard.html">dashboard</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <form action="" class="navbar-form">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="search" name="search" id="" placeholder="Search..." class="form-control">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
 
-    <!-- Krypton : Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- Icon -->
-        <a class="navbar-brand" href="#">Krushival:</a>
-        <!-- TODO: add the LOGO -->
-
-        <!-- Hamburger button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Actual div to hold the links -->
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a id="about" href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a id="register" href="register.html" class="nav-link">Register</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control my-5 my-sm-0 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                            <li><a href="register.html"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
-    <!-- Krypton : Navbar end -->
+    </div>
+
     <div class="background">
         <img src="Images/background.png">
         <div calss="about-content">
@@ -67,6 +76,10 @@
             </p>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
+
 
 </html>
