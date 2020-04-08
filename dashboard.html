@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
+    <!--meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--//meta tags ends here-->
+    <!-- <script src="https://kit.fontawesome.com/cfeb05e6a3.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="CSS/styelsheet_dashbord.css">
     <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+
     <title>Dashboard </title>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
@@ -31,12 +35,60 @@
             chart.draw(data, options);
         }
     </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <title>कृषिवल:-Home</title>
+
+
+
 </head>
 
 <body>
-    <div class="details">
+
+    <div class="navbar navbar-inverse sticky-top bg-light">
+        <div class=" container-fluid ">
+            <div class="row ">
+                <div class="col-lg-12 ">
+
+                    <div class="navbar-header ">
+                        <button class="navbar-toggle " data-target="#mobile_menu " data-toggle="collapse "><span class="icon-bar "></span><span class="icon-bar "></span><span class="icon-bar "></span></button>
+                        <a href="# " class="navbar-brand ">कृषिवल</a>
+                    </div>
+
+                    <div class="navbar-collapse collapse " id="mobile_menu ">
+                        <ul class="nav navbar-nav ">
+                            <li class="active "><a href="# ">Home</a></li>
+                            <li><a href="about.html ">About Us</a></li>
+                            <li><a href="dashboard.html ">dashboard</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav ">
+                            <li>
+                                <form action=" " class="navbar-form ">
+                                    <div class="form-group ">
+                                        <div class="input-group ">
+                                            <input type="search " name="search " id=" " placeholder="Search... " class="form-control ">
+                                            <span class="input-group-addon "><span class="glyphicon glyphicon-search "></span></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right ">
+                            <li><a href="# "><span class="glyphicon glyphicon-user "></span> Profile</a></li>
+                            <li><a href="register.html "><span class="glyphicon glyphicon-log-in "></span> Login / Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="details ">
         <h3>Yield Present In Maharashtra Now Days</h3>
-        <table id="farmer_data">
+        <table id="farmer_data ">
             <tr>
                 <th>Name Of Farmer</th>
                 <th>Contact</th>
@@ -46,17 +98,24 @@
                 <th>Yield (Quintal/Hector)</th>
             </tr>
             <tr>
-                <td><input type="text" id="name_of_farmer"></td>
-                <td><input type="number" id="contact"></td>
-                <td><input type="text" id="catagory"></td>
-                <td><input type="text" id="name_of_catagory"></td>
-                <td><input type="number" id="cost_of_cultivation"></td>
-                <td><input type="number" id="yeild"></td>
+                <td><input type="text " id="name_of_farmer "></td>
+                <td><input type="number " id="contact "></td>
+                <td><input type="text " id="catagory "></td>
+                <td><input type="text " id="name_of_catagory "></td>
+                <td><input type="number " id="cost_of_cultivation "></td>
+                <td><input type="number " id="yeild "></td>
             </tr>
         </table>
-        <button type="submit">New Entry</button>
+        <button type="submit ">New Entry</button>
     </div>
-    <div id="piechart_3d" style="width: 900px; height: 500px;position: relative;transform: translate(400px,50px);"></div>
+    <div id="piechart_3d " style="width: 900px; height: 500px;position: relative;transform: translate(400px,50px); ">
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+
+
 </body>
+
 
 </html>
