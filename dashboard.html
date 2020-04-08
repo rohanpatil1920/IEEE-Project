@@ -9,47 +9,76 @@
     <!-- <script src="https://kit.fontawesome.com/cfeb05e6a3.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="CSS/styelsheet_dashbord.css">
     <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+
+    <title>Dashboard </title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", {
+            packages: ["corechart"]
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Vegitables', 2],
+                ['Grains', 2],
+                ['Liquid', 2],
+            ]);
+
+            var options = {
+                title: 'Contents Available (with sample data inputs)',
+                is3D: true,
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+            chart.draw(data, options);
+        }
+    </script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <title>कृषिवल:-Home</title>
+
 
 
 </head>
 
 <body>
 
-<div class="navbar navbar-inverse sticky-top bg-light>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
+    <div class="navbar navbar-inverse sticky-top bg-light">
+        <div class=" container-fluid ">
+            <div class="row ">
+                <div class="col-lg-12 ">
 
-                    <div class="navbar-header">
-                        <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                        <a href="#" class="navbar-brand">कृषिवल</a>
+                    <div class="navbar-header ">
+                        <button class="navbar-toggle " data-target="#mobile_menu " data-toggle="collapse "><span class="icon-bar "></span><span class="icon-bar "></span><span class="icon-bar "></span></button>
+                        <a href="index.html" class="navbar-brand ">कृषिवल</a>
                     </div>
 
-                    <div class="navbar-collapse collapse" id="mobile_menu">
-                        <ul class="nav navbar-nav">
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li class="active"><a href="dashboard.html">dashboard</a></li>
+
+                    <div class="navbar-collapse collapse " id="mobile_menu ">
+                        <ul class="nav navbar-nav ">
+                            <li class="active "><a href="# ">Home</a></li>
+                            <li><a href="about.html ">About Us</a></li>
+                            <li><a href="dashboard.html ">dashboard</a></li>
                         </ul>
-                        <ul class="nav navbar-nav">
+                        <ul class="nav navbar-nav ">
                             <li>
-                                <form action="" class="navbar-form">
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <input type="search" name="search" id="" placeholder="Search..." class="form-control">
-                                            <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                                <form action=" " class="navbar-form ">
+                                    <div class="form-group ">
+                                        <div class="input-group ">
+                                            <input type="search " name="search " id=" " placeholder="Search... " class="form-control ">
+                                            <span class="input-group-addon "><span class="glyphicon glyphicon-search "></span></span>
                                         </div>
                                     </div>
                                 </form>
                             </li>
                         </ul>
 
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-                            <li><a href="register.html"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a>
+                        <ul class="nav navbar-nav navbar-right ">
+                            <li><a href="# "><span class="glyphicon glyphicon-user "></span> Profile</a></li>
+                            <li><a href="register.html "><span class="glyphicon glyphicon-log-in "></span> Login / Sign Up</a>
                             </li>
                         </ul>
                     </div>
@@ -58,28 +87,34 @@
         </div>
     </div>
 
-    <div class="details">
+    <div class="details ">
         <h3>Yield Present In Maharashtra Now Days</h3>
-        <table id="farmer_data">
+        <table id="farmer_data ">
             <tr>
                 <th>Name Of Farmer</th>
                 <th>Contact</th>
-                <th>Type Of Crop</th>
+                <th>Catagory</th>
+                <th>Name of Catagory</th>
                 <th>Cost of Cultivation (/Hector)</th>
                 <th>Yield (Quintal/Hector)</th>
             </tr>
             <tr>
-                <td><input type="text" id="name_of_farmer"></td>
-                <td><input type="number" id="contact"></td>
-                <td><input type="text" id="type_of_croop"></td>
-                <td><input type="number" id="cost_of_cultivation"></td>
-                <td><input type="number" id="yeild"></td>
+                <td><input type="text " id="name_of_farmer "></td>
+                <td><input type="number " id="contact "></td>
+                <td><input type="text " id="catagory "></td>
+                <td><input type="text " id="name_of_catagory "></td>
+                <td><input type="number " id="cost_of_cultivation "></td>
+                <td><input type="number " id="yeild "></td>
             </tr>
         </table>
-        <button type="submit">New Entry</button>
+        <button type="submit ">New Entry</button>
     </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <div id="piechart_3d " style="width: 900px; height: 500px;position: relative;transform: translate(400px,50px); ">
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+
 
 </body>
 
