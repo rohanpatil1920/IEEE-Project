@@ -1,6 +1,17 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(../Images/Index_Background.jpg);
+    background-color: #f3f3f3;
     color: #fff;
+}
+
+.background img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.about-content {
+    margin: 25px 10px 0px 10px;
+    word-wrap: normal;
 }
