@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="CSS/stylesheet_dashboard.css">
     <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="js/dashboard.js" charset="utf-8"></script>
 
     <title>कृषिवल:-Home</title>
 
@@ -30,14 +31,14 @@
 
                     <div class="navbar-header">
                         <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                        <a href="index.html" class="navbar-brand">कृषिवल</a>
+                        <a href="home.html" class="navbar-brand">कृषिवल</a>
                     </div>
 
                     <div class="navbar-collapse collapse" id="mobile_menu">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="home.html">Home</a></li>
                             <li><a href="about.html">About Us</a></li>
-                            <li><a href="dashboard.html">dashboard</a></li>
+                            <li class="active"><a href="dashboard.html">dashboard</a></li>
                         </ul>
                         <ul class="nav navbar-nav">
                             <li>
@@ -76,13 +77,13 @@
             <tr>
                 <td><input type="text " id="name_of_farmer "></td>
                 <td><input type="number " id="contact "></td>
-                <td><input type="text " id="catagory "></td>
-                <td><input type="text " id="name_of_catagory "></td>
+                <td><input type="text " id="category "></td>
+                <td><input type="text " id="name_of_category "></td>
                 <td><input type="number " id="cost_of_cultivation "></td>
-                <td><input type="number " id="yeild "></td>
+                <td><input type="number " id="yield "></td>
             </tr>
         </table>
-        <button type="submit ">New Entry</button>
+        <button onclick="submitData()" type="submit ">New Entry</button>
     </div>
     <div id="piechart_3d " style="width: 900px; height: 500px;position: relative;transform: translate(400px,50px); "></div>
 
