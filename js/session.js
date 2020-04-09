@@ -28,16 +28,16 @@ function initApp() {
         document.getElementById('username').innerHTML = '<span class="glyphicon glyphicon-user"></span>' +" " +displayName;
         document.getElementById('sign').innerHTML = '<span class="glyphicon glyphicon-log-in"></span> Logout';
         document.getElementById('sign').setAttribute("onclick", "logout()");
-        console.log(JSON.stringify({
-          displayName: displayName,
-          email: email,
-          emailVerified: emailVerified,
-          phoneNumber: phoneNumber,
-          photoURL: photoURL,
-          uid: uid,
-          accessToken: accessToken,
-          providerData: providerData
-        }, null, '  '));
+        // console.log(JSON.stringify({
+        //   displayName: displayName,
+        //   email: email,
+        //   emailVerified: emailVerified,
+        //   phoneNumber: phoneNumber,
+        //   photoURL: photoURL,
+        //   uid: uid,
+        //   accessToken: accessToken,
+        //   providerData: providerData
+        // }, null, '  '));
       });
     } else {
       console.log(window.location);
