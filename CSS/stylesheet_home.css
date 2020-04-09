@@ -1,4 +1,6 @@
-*, *::after, *::before{
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,11 +17,12 @@ body {
 }
 
 .body-iframe iframe {
-    border: 5px solid black;
-    transform: translate(20px, 40px);
+    border: px solid #6ab04c;
+    transform: translate(20px, 100px);
     height: 400px;
     width: 900px;
     background-color: #fff;
+    border-radius: 10px;
 }
 
 .body-iframe h1 {
