@@ -1,9 +1,11 @@
 
 function submitData() {
-  // var name = document.getElementById("contact").value;
-  var k = document.getElementById('contact').value;
-  console.log(k);
+ // var name = document.getElementById("").value;
+  var contact = document.getElementById('contact').value;
+
+  console.log(contact);
 
   firebase.database().ref().push("hello world");
+  // window.alert("hi")
 
 }
