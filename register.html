@@ -19,23 +19,8 @@
     <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+    <script src="js/session.js" charset="utf-8"></script>
 
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyCUq4iqHKzckYm3PQ1_YrvkkUYq_Nv-dms",
-            authDomain: "ieee-krushival.firebaseapp.com",
-            databaseURL: "https://ieee-krushival.firebaseio.com",
-            projectId: "ieee-krushival",
-            storageBucket: "ieee-krushival.appspot.com",
-            messagingSenderId: "892909807247",
-            appId: "1:892909807247:web:b7ea76eae854484fdf72fa"
-        };
-
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-    </script>
     <script type="text/javascript">
         // FirebaseUI config.
         var uiConfig = {
@@ -71,7 +56,7 @@
     </style-->
 </head>
 
-<body media="screen" style="background-image: url(../Images/Index_Background.jpg);background-repeat: no-repeat;height: 100vh;background-size: cover;">
+<body onload="initApp()" media="screen" style="background-image: url(../Images/Index_Background.jpg);background-repeat: no-repeat;height: 100vh;background-size: cover;">
 
     <div class="navbar navbar-inverse sticky-top bg-light">
         <div class="container-fluid">
@@ -86,7 +71,7 @@
                     <div class="navbar-collapse collapse" id="mobile_menu">
                         <ul class="nav navbar-nav">
                             <li><a href="home.html">Home</a></li>
-                            <li class="active"><a href="about.html">About Us</a></li>
+                            <li><a href="about.html">About Us</a></li>
                             <li><a href="dashboard.html">dashboard</a></li>
                         </ul>
                         <ul class="nav navbar-nav">
@@ -103,8 +88,8 @@
                         </ul>
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-                            <li><a href="register.html"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a>
+                            <li><a id="username" href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                            <li><a id="sign" href="register.html"><span class="active glyphicon glyphicon-log-in"></span> Login / Sign Up</a>
                             </li>
                         </ul>
                     </div>
