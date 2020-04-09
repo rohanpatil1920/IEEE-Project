@@ -17,8 +17,6 @@ function initApp() {
     if (user) {
       // User is signed in.
       var displayName = user.displayName;
-      alert(displayName);
-      document.getElementById('username').innerHTML = '<span class="glyphicon glyphicon-user"></span>'+displayName;
       var email = user.email;
       var emailVerified = user.emailVerified;
       var photoURL = user.photoURL;
@@ -26,24 +24,24 @@ function initApp() {
       var phoneNumber = user.phoneNumber;
       var providerData = user.providerData;
       user.getIdToken().then(function(accessToken) {
-        // document.getElementById('sign-in-status').textContent = 'Signed in';
-        // document.getElementById('sign-in').textContent = 'Sign out';
-        // document.getElementById('account-details').textContent = JSON.stringify({
-        //   displayName: displayName,
-        //   email: email,
-        //   emailVerified: emailVerified,
-        //   phoneNumber: phoneNumber,
-        //   photoURL: photoURL,
-        //   uid: uid,
-        //   accessToken: accessToken,
-        //   providerData: providerData
-        // }, null, '  ');
+        console.log(displayName +" is logged in");
+        document.getElementById('username').innerHTML = '<span class="glyphicon glyphicon-user"></span>' +" " +displayName;
+        document.getElementById('sign').innerHTML = '<span class="glyphicon glyphicon-log-in"></span>' +" " +'Logout';
+        document.getElementById('sign').setAttribute("onclick", "logout()");
+        console.log(JSON.stringify({
+          displayName: displayName,
+          email: email,
+          emailVerified: emailVerified,
+          phoneNumber: phoneNumber,
+          photoURL: photoURL,
+          uid: uid,
+          accessToken: accessToken,
+          providerData: providerData
+        }, null, '  '));
       });
     } else {
       // User is signed out.
-      document.getElementById('sign-in-status').textContent = 'Signed out';
-      document.getElementById('sign-in').textContent = 'Sign in';
-      document.getElementById('account-details').textContent = 'null';
+      document.getElementById('sign').innerHTML = '<span class="glyphicon glyphicon-log-in"></span> Sign Up';
     }
   }, function(error) {
     console.log(error);
