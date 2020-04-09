@@ -1,6 +1,7 @@
         body {
             margin: 0;
             padding: 0;
+            position: relative;
         }
         
         h3 {
@@ -8,27 +9,32 @@
             font-size: xx-large;
         }
         
-        #farmer_data {
-            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        .details {
+           /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;  */
             border-collapse: collapse;
-            width: 100%;
+            width: fit-content;
+            position: relative;
+           
         }
         
-        #farmer_data td,
-        #farmer_data th {
+        .details td,
+        .details th {
+            width: auto;
             border: 1px solid #ddd;
             padding: 8px;
         }
         
-        #farmer_data tr:nth-child(even) {
+        .details tr:nth-child(even) {
+            width: auto;
             background-color: #f2f2f2;
         }
         
-        #farmer_data tr:hover {
+        .details tr:hover {
             background-color: #ddd;
         }
         
-        #farmer_data th {
+        .details th {
+            width: auto;
             padding-top: 12px;
             padding-bottom: 12px;
             text-align: left;
@@ -37,14 +43,14 @@
         }
         
         .details button {
-            position: absolute;
+            position: relative;
             left: 85%;
             margin: 25px;
             border: none;
             outline: none;
             color: #fff;
             background: #4caf50;
-            width: 10%;
+            width: 13%;
             height: 5%;
             font-size: x-large;
             font-weight: 700;
