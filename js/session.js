@@ -40,6 +40,12 @@ function initApp() {
         }, null, '  '));
       });
     } else {
+      console.log(window.location);
+      url = window.location.href;
+      if (url.includes("dashboard")) {
+        alert("protected data! please log in to continue");
+        window.location = "register.html";
+      }
       // User is signed out.
       document.getElementById('sign').innerHTML = '<span class="glyphicon glyphicon-log-in"></span> Sign Up';
     }
@@ -56,3 +62,10 @@ function logout(){
     console.log("error");
   })
 }
+//
+// function check(){
+//   if (!user) {
+//     // WARNING:
+//
+//   }
+// }
