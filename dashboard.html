@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="js/dashboard.js" charset="utf-8"></script>
 
-    <title>कृषिवल:-Home</title>
+    <title>Dashboard</title>
 
 
 </head>
@@ -39,6 +39,7 @@
                             <li><a href="home.html">Home</a></li>
                             <li><a href="about.html">About Us</a></li>
                             <li class="active"><a href="dashboard.html">dashboard</a></li>
+                            <li><a href="collection.html">Collection</a></li>
                         </ul>
                         <ul class="nav navbar-nav">
                             <li>
@@ -65,52 +66,52 @@
 
     <div class="container panel details data-validator">
 
-      <div style="display:none" id="success" class="alert alert-success alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="alert-heading">success!</h4>
-        <p>data uploaded successfully</p>
-        <hr>
-      </div>
+        <div style="display:none" id="success" class="alert alert-success alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="alert-heading">success!</h4>
+            <p>data uploaded successfully</p>
+            <hr>
+        </div>
 
-      <div style="display:none" id="error" class="alert alert-danger alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="alert-heading">error!</h4>
-        <p>please fill all the fields.</p>
-        <hr>
-      </div>
+        <div style="display:none" id="error" class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="alert-heading">error!</h4>
+            <p>please fill all the fields.</p>
+            <hr>
+        </div>
 
 
         <h3 class="panel-heading">Yield Present In Maharashtra Now Days</h3>
         <table style="border-collapse: collapse" class="table table-responsive" id="farmer_data ">
-          <thead class="thead-light">
-            <tr>
-                <th scope="col">Name Of Farmer</th>
-                <th scope="col">Contact</th>
-                <th scope="col">produce</th>
-                <th scope="col">quantity</th>
-                <th scope="col">Cost of Cultivation (/Hector)</th>
-                <th scope="col">Yield (Quintal/Hector)</th>
-            </tr>
-          </thead>
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Name Of Farmer</th>
+                    <th scope="col">Contact</th>
+                    <th scope="col">Produce</th>
+                    <th scope="col">Yeild</th>
+                    <th scope="col">Cost of Cultivation</th>
+                    <th scope="col">Catagory</th>
+                </tr>
+            </thead>
 
-          <tbody>
-            <tr>
-                <td><input data class="form-control" type="text " id="name_of_farmer" required></td>
-                <td><input class="form-control" type="number " id="contact" required></td>
-                <td><input class="form-control" type="text " id="produce" required></td>
-                <td><input class="form-control" type="text" id="quantity" required></td>
-                <td><input class="form-control" type="number " id="cost_of_cultivation" required></td>
-                <td>
-                  <select class="form-control" id="type">
-                    <option value="fruits">fruits</option>
-                    <option value="cereals">cereals</option>
-                    <option value="grains">grains</option>
-                    <option value="vegetables">vegetables</option>
+            <tbody>
+                <tr>
+                    <td><input data class="form-control" type="text " id="name_of_farmer" required></td>
+                    <td><input class="form-control" type="number " id="contact" required></td>
+                    <td><input class="form-control" type="text " id="produce" required></td>
+                    <td><input class="form-control" type="text" id="quantity" required></td>
+                    <td><input class="form-control" type="number " id="cost_of_cultivation" required></td>
+                    <td>
+                        <select class="form-control" id="type">
+                    <option value="fruits">Fruits</option>
+                    <option value="cereals">Cereals</option>
+                    <option value="grains">Grains</option>
+                    <option value="vegetables">Vegetables</option>
                   </select>
-                </td>
-                select
-            </tr>
-          </tbody>
+                    </td>
+                    Select
+                </tr>
+            </tbody>
         </table>
         <button class="btn btn-success" onclick="submitData()">New Entry</button>
     </div>
