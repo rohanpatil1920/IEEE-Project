@@ -62,10 +62,3 @@ function logout(){
     console.log("error");
   })
 }
-//
-// function check(){
-//   if (!user) {
-//     // WARNING:
-//
-//   }
-// }
