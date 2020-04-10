@@ -46,6 +46,7 @@ function initApp() {
         alert("protected data! please log in to continue");
         window.location = "register.html";
       }
+
       // User is signed out.
       document.getElementById('sign').innerHTML = '<span class="glyphicon glyphicon-log-in"></span> Sign Up';
     }
