@@ -7,31 +7,42 @@
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
     background-image: url(../Images/Index_Background.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
     background-size: cover;
+    /* overflow: hidden; */
 }
+
+.kolumn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+
 
 .body-iframe iframe {
     border: px solid #6ab04c;
     transform: translate(20px, 100px);
-    height: 400px;
-    width: 900px;
+    height: 100vh;
+    width: 100vw;
     background-color: #fff;
     border-radius: 10px;
 }
 
-.body-iframe h1 {
-    margin: 10px 20px;
-    transform: translate(0px, 20px);
-    color: #fff;
-    border-bottom: 5px solid black;
+::-webkit-scrollbar {
+  display: none;
 }
 
+.left{
+  float: left;
+  width: content;
+}
+
+/*
 .logo {
     padding: 50px;
     width: 5%;
@@ -39,4 +50,4 @@ body {
     position: absolute;
     left: 70%;
     transform: translateX(50px);
-}
+} */
