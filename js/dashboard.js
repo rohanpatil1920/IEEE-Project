@@ -9,6 +9,17 @@ class db{
   }
 }
 
+function hide(){
+  var err = document.getElementById('error');
+  var success = document.getElementById('success');
+  if (err.style.display == "block") {
+    err.style.display = "none";
+  }
+  else if (success.style.display == "block") {
+    success.style.display = "none";
+  }
+}
+
 function submitData() {
   var farmer = document.getElementById('name_of_farmer').value.trim();
   var produce = document.getElementById('produce').value.trim();
@@ -35,7 +46,7 @@ function submitData() {
             document.getElementById('success').style.display = "block";
           }
         });
-
+        setTimeout(hide, 5000);
       }
       else {
         alert("An unexpected error occured!\nplease login again to continue");
