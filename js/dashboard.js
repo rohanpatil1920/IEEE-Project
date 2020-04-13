@@ -25,8 +25,17 @@ function submitData() {
     if (farmer !== "" && produce !== "" && quantity !== "" && cost !== "" && type !== "") {
       console.log(farmer);
       if (user) {
-        firebase.database().ref().child(user.displayName).push(details);
-        document.getElementById('success').style.display = "block";
+        firebase.database().ref().child(user.displayName).set(details,
+        function(error) {
+          if (error) {
+            document.getElementById('emsg').textContent = "Failed to push data!";
+            document.getElementById('error').style.display = "block";
+          }
+          else {
+            document.getElementById('success').style.display = "block";
+          }
+        });
+
       }
       else {
         alert("An unexpected error occured!\nplease login again to continue");
