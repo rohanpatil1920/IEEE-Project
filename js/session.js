@@ -8,6 +8,8 @@ var firebaseConfig = {
   appId: "1:892909807247:web:b7ea76eae854484fdf72fa"
 };
 
+var user;
+
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
@@ -15,6 +17,8 @@ function initApp() {
   console.log("initApp executed");
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
+      window.user = user;
+      console.log("user in \n" +window.user.displayName);
       // User is signed in.
       var displayName = user.displayName;
       var email = user.email;
@@ -53,6 +57,7 @@ function initApp() {
   }, function(error) {
     console.log(error);
   });
+  var init = true;
 }
 
 function logout(){
@@ -63,8 +68,3 @@ function logout(){
     console.log("error");
   })
 }
-
-
-
-
-

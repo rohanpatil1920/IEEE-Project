@@ -1,7 +1,8 @@
 google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawPieChart);
 
-function drawChart() {
+console.log(firebaseConfig);
+function drawPieChart() {
 
   var data = google.visualization.arrayToDataTable([
     ['Task', 'Hours per Day'],
@@ -23,11 +24,26 @@ function drawChart() {
 }
 
 google.charts.load('current', {'packages':['bar']});
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawBarChart);
 
-function drawChart() {
+var id;
+function check(){
+  if (typeof user === 'undefined' || user == null) {
+    // console.log("user not defined");
+    return false;
+  }
+  else {
+    console.log("user is present");
+    console.log(user.displayName);
+    clearInterval(id);
+  }
+}
+
+function drawBarChart() {
+  id = setInterval(check, 250);
   var totalCereals = firebase.database().ref().child(user.displayName).once('value').then(function(snapshot) {
     console.log(snapshot.val());
+    console.log("values");
 });
   var data = google.visualization.arrayToDataTable([
     ['food products', 'in quintals'],
