@@ -6,49 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/stylesheet_header.css">
     <link rel="stylesheet" href="CSS/stylesheet_forgotpass.css">
+    <link rel="stylesheet" href="CSS/stylesheet_header.css">
     <link rel="icon" href="Images/favicon-32x32.png">
     <title>Forgot Password ?</title>
 </head>
 
 <body>
 
-    <!--header-->
-    <div class="header">
-        <div class="site-name">
-            <h1 id="logo"><a href="index.html">कृषिवल:</a></h1>
-        </div>
-        <div class="search">
-            <form action="#" method="post">
-                <div class="input-group">
-                    <div class="search-up">
-                        <input type="search" class="form-control" id="search1" placeholder="Search...." required="">
-                    </div>
-                    <span class="input-group-btn">
-							<button class="btn-search" type="submit"><span class="fa fa-search"></span></button>
-                    </span>
-                </div>
-            </form>
-        </div>
+    <div class="navbar navbar-inverse sticky-top bg-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
 
-    </div>
-    <!-- //header -->
-    <div class="top-nav">
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <!-- navigation -->
-                <div id="nav" class="nav-to-pages">
-                    <ul class="navbar-nav">
-                        <li><a id="home" href="home.html " class="nav-tabs">Home</a></li>
-                        <li><a id="about" href="about.html" class="nav-tabs">About</a></li>
-                        <li><a id="register" href="register.html" class="nav-tabs">Register</a></li>
-                        <li><a href="dashboard.html">Dashboard</a></li>
-                        <!--  <li><a id="contact" href="contactus.html" class="nav-tabs">Contact</a></li> -->
-                    </ul>
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <a href="home.html" class="navbar-brand">कृषिवल</a>
+                    </div>
+
+                    <div class="navbar-collapse collapse" id="mobile_menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="home.html">Home</a></li>
+                            <li class="active"><a href="about.html">About Us</a></li>
+                            <li><a href="collection.html">Collection</a></li>
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <form action="" class="navbar-form">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="search" name="search" id="" placeholder="Search..." class="form-control">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a id="username" href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                            <li><a id="sign" href="register.html"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <!--//navigation-->
             </div>
-        </nav>
+        </div>
     </div>
+
     <div class="content">
         <h1>RECOVER YOUR PASSWORD BY</h1>
     </div>
