@@ -9,7 +9,12 @@ var firebaseConfig = {
 };
 
 var user;
-
+// global variables
+var displayName;
+var email;
+var emailVerified;
+var photoURL;
+var phoneNumber;
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
@@ -20,12 +25,12 @@ function initApp() {
       window.user = user;
       console.log("user in \n" +window.user.displayName);
       // User is signed in.
-      var displayName = user.displayName;
-      var email = user.email;
-      var emailVerified = user.emailVerified;
-      var photoURL = user.photoURL;
+      displayName = user.displayName;
+      email = user.email;
+      emailVerified = user.emailVerified;
+      photoURL = user.photoURL;
       var uid = user.uid;
-      var phoneNumber = user.phoneNumber;
+      phoneNumber = user.phoneNumber;
       var providerData = user.providerData;
       user.getIdToken().then(function(accessToken) {
         console.log(displayName +" is logged in");
