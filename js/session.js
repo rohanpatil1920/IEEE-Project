@@ -22,6 +22,18 @@ function initApp() {
   console.log("initApp executed");
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
+
+      var district;
+    // if (farmer.value.trim() !== "" && produce.value.trim() !== "" && quantity.value.trim() !== "" && cost.value.trim() !== "" && type.value.trim() !== "") {
+      // console.log(farmer.value);
+      firebase.database().ref("/prem").once("value").then((snapshot) => {
+        district = snapshot.val().username;
+        console.log(district);
+      }).catch((err) => {
+        console.log(err);
+      });
+      
+
       window.user = user;
       console.log("user in \n" +window.user.displayName);
       // User is signed in.
