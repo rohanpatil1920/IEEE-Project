@@ -82,15 +82,59 @@
 
 
         <h3 class="panel-heading">Yield Present In Maharashtra Now Days</h3>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-left:10px">Select District
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Ahmednagar</a></li>
+                <li><a href="#">Akola</a></li>
+                <li><a href="#">Amravati</a></li>
+                <li><a href="#">Aurangabad</a></li>
+                <li><a href="#">Beed</a></li>
+                <li><a href="#">Bhandara</a></li>
+                <li><a href="#">Buldhana</a></li>
+                <li><a href="#">Chandrapur</a></li>
+                <li><a href="#">Dhule</a></li>
+                <li><a href="#">Gadchiroli</a></li>
+                <li><a href="#">Gondia</a></li>
+                <li><a href="#">Hingoli</a></li>
+                <li><a href="#">Jalgaon</a></li>
+                <li><a href="#">Jalna</a></li>
+                <li><a href="#">Kolhapur</a></li>
+                <li><a href="#">Latur</a></li>
+                <li><a href="#">Mumbai City</a></li>
+                <li><a href="#">Mumbai Suburban</a></li>
+                <li><a href="#">Nagpur</a></li>
+                <li><a href="#">Nanded</a></li>
+                <li><a href="#">Nandurbar</a></li>
+                <li><a href="#">Nashik</a></li>
+                <li><a href="#">Osmanabad</a></li>
+                <li><a href="#">Palghar</a></li>
+                <li><a href="#">Parbhani</a></li>
+                <li><a href="#">Pune</a></li>
+                <li><a href="#">Raigad</a></li>
+                <li><a href="#">Ratnagiri</a></li>
+                <li><a href="#">Sangli</a></li>
+                <li><a href="#">Satara</a></li>
+                <li><a href="#">Sindhudurg</a></li>
+                <li><a href="#">Solapur</a></li>
+                <li><a href="#">Thane</a></li>
+                <li><a href="#">Wardha</a></li>
+                <li><a href="#">Washim</a></li>
+                <li><a href="#">Yavatmal</a></li>
+            </ul>
+        </div>
         <table style="border-collapse: collapse" class="table table-responsive" id="farmer_data ">
             <thead class="thead-light">
                 <tr>
                     <th scope="col">Name Of Farmer</th>
                     <th scope="col">Contact</th>
+                    <th scope="col">Name Of Village</th>
                     <th scope="col">Produce</th>
                     <th scope="col">Yeild</th>
                     <th scope="col">Cost of Cultivation</th>
                     <th scope="col">Catagory</th>
+
                 </tr>
             </thead>
 
@@ -98,22 +142,23 @@
                 <tr>
                     <td><input data class="form-control" type="text " id="name_of_farmer" required></td>
                     <td><input class="form-control" type="number " id="contact" required></td>
+                    <td><input data class="form-control" type="text " id="name_of_village" required></td>
                     <td><input class="form-control" type="text " id="produce" required></td>
                     <td><input class="form-control" type="text" id="quantity" required></td>
                     <td><input class="form-control" type="number " id="cost_of_cultivation" required></td>
                     <td>
                         <select class="form-control" id="type">
-                    <option value="fruits">Fruits</option>
-                    <option value="cereals">Cereals</option>
-                    <option value="grains">Grains</option>
-                    <option value="vegetables">Vegetables</option>
-                  </select>
+                            <option value="fruits" selected>SELECT</option>
+                            <option value="fruits">Fruits</option>
+                            <option value="cereals">Cereals</option>
+                            <option value="grains">Grains</option>
+                            <option value="vegetables">Vegetables</option>
+                         </select>
                     </td>
-                    Select
                 </tr>
             </tbody>
         </table>
-        <button class="btn btn-success" onclick="submitData()">New Entry</button>
+        <button class="btn btn-success" onclick="submitData()" style="margin-left:10px;">New Entry</button>
     </div>
     <div id="piechart_3d " style="width: 900px; height: 500px;position: relative;transform: translate(400px,50px); "></div>
 
