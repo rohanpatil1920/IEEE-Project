@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!--meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--//meta tags ends here-->
+    <!-- <script src="https://kit.fontawesome.com/cfeb05e6a3.js" crossorigin="anonymous"></script> -->
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <title>Order Now</title>
+</head>
+
+<body onload="initApp()">
+
+    <div class="navbar navbar-inverse sticky-top bg-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <a href="home.html" class="navbar-brand">कृषिवल</a>
+                    </div>
+
+                    <div class="navbar-collapse collapse" id="mobile_menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="collection.html">Collection</a></li>
+                            <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <form action="" class="navbar-form">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="search" name="search" id="" placeholder="Search..." class="form-control">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a id="username" href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                            <li><a id="sign" href="register.html"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <form class="form-horizontal">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>
+                    <h1 style="font-weight: 700;margin: 20px;">Place Your Order Here !</h1>
+                </legend>
+                <span class="help-block"><p style="color: red;margin-top: 5px;font-weight: 700;float: right;margin-right: 20px;">*All Fields Are Required</p></span>
+                <!-- Name of Customer-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="textinput">Name</label>
+                    <div class="col-md-3">
+                        <input id="textinput" name="textinput" type="text" placeholder="Name" class="form-control input-md" required>
+
+                    </div>
+                </div>
+                <!-- Phone Number-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="numberinput">Phone Number</label>
+                    <div class="col-md-3">
+                        <input id="textinput" name="textinput" type="number" placeholder="Phone" class="form-control input-md" required>
+
+                    </div>
+                </div>
+
+                <!-- Address-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="textinput">Address</label>
+                    <div class="col-md-3">
+                        <input id="textinput" name="textinput" type="text" placeholder="Address Line 1" class="form-control input-md" required style="margin-bottom: 10px;">
+                        <input id="textinput" name="textinput" type="text" placeholder="Address Line 2" class="form-control input-md">
+
+                    </div>
+                </div>
+                <!-- Postal Code-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="numberinput">Zip Code</label>
+                    <div class="col-md-3">
+                        <input id="textinput" name="textinput" type="number" placeholder="Zip Code" class="form-control input-md" required>
+
+                    </div>
+                </div>
+                <!-- Item reqired-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="selectinput">Select Requirement</label>
+                    <div class="col-md-2">
+                        <select class="form-control" id="type">
+                            <option value="select" selected>---SELECT---</option>
+                            <option value="fruits">Fruits</option>
+                            <option value="cereals">Cereals</option>
+                            <option value="grains">Grains</option>
+                            <option value="vegetables">Vegetables</option>
+                          </select>
+                    </div>
+                </div>
+                <!-- Quantity-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="numberinput">Quantity</label>
+                    <div class="col-md-2">
+                        <input id="textinput" name="textinput" type="number" placeholder="Quantity in KG" class="form-control input-md" required>
+
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+</body>
+
+</html>
