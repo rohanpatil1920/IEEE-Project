@@ -21,22 +21,22 @@ function hide(){
 }
 
 function submitData() {
-  var farmer = document.getElementById('name_of_farmer').value.trim();
-  var produce = document.getElementById('produce').value.trim();
-  var quantity = document.getElementById('quantity').value.trim();
-  var cost = document.getElementById('cost_of_cultivation').value.trim();
-  var type = document.getElementById('type').value.trim();
+  var farmer = document.getElementById('name_of_farmer');
+  var produce = document.getElementById('produce');
+  var quantity = document.getElementById('quantity');
+  var cost = document.getElementById('cost_of_cultivation');
+  var type = document.getElementById('type');
   var user = firebase.auth().currentUser;
-  console.log(user);
-  console.log(farmer, produce, quantity, cost );
+  // console.log(user);
+  console.log(farmer.value, produce.value, quantity.value, cost.value );
 
-  var details = new db(farmer, produce, quantity, cost, type);
+  var details = new db(farmer.value, produce.value, quantity.value, cost.value, type.value );
   console.log(details);
-
-    if (farmer !== "" && produce !== "" && quantity !== "" && cost !== "" && type !== "") {
-      console.log(farmer);
+  var district;
+    if (farmer.value.trim() !== "" && produce.value.trim() !== "" && quantity.value.trim() !== "" && cost.value.trim() !== "" && type.value.trim() !== "") {
+      console.log(farmer.value);      
       if (user) {
-        firebase.database().ref().child(user.displayName).push().set(details,
+        firebase.database().ref().child(district).child(user.displayName).push().set(details,
         function(error) {
           if (error) {
             document.getElementById('emsg').textContent = "Failed to push data!";
@@ -44,6 +44,11 @@ function submitData() {
           }
           else {
             document.getElementById('success').style.display = "block";
+            farmer.value = "";
+            produce.value = "";
+            quantity.value = "";
+            cost.value = "";
+            type.value = "";
           }
         });
         setTimeout(hide, 5000);
